@@ -7,3 +7,15 @@ test("Search renders correctly", () => {
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+test("Search renders correctly", () => {
+  const component = renderer.create(<ShowCard />);
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test("Search renders correctly", () => {
+  const component = renderer.create(<Landing />);
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
