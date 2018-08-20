@@ -2,7 +2,7 @@ import React from "react";
 // import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 // enzyme uses renderer underneath the hood
-import preload from "../..data.json";
+import preload from "../../data.json";
 import Search from "../Search";
 import ShowCard from "../ShowCard";
 
@@ -14,7 +14,7 @@ test("Search renders correctly", () => {
 
 test("Search should render correct amount of shows", () => {
   const component = shallow(<Search />);
-  expect(preload.shows.length).toEqual(component.find(ShowCard).length);
+  expect(component.find(ShowCard).length).toEqual(preload.shows.length);
 });
 
 test("Search should render correct amount of shows based on search term", () => {});
