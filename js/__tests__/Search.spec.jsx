@@ -8,7 +8,6 @@ import ShowCard from "../ShowCard";
 
 test("Search renders correctly", () => {
   const component = shallow(<Search />);
-  // const tree = component.toJSON();
   expect(component).toMatchSnapshot();
 });
 

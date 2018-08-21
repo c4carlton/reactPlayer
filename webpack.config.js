@@ -29,7 +29,7 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NormalModuleReplacementPlugin()
+    new webpack.NamedModulesPlugin()
   ],
   module: {
     rules: [
