@@ -15,6 +15,7 @@ module.exports = {
     filename: "bundle.js"
   },
   devServer: {
+    hot: true,
     publicPath: "/public/",
     historyApiFallback: true
   },
@@ -26,6 +27,10 @@ module.exports = {
     reasons: true,
     chunks: true
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NormalModuleReplacementPlugin()
+  ],
   module: {
     rules: [
       {
