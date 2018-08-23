@@ -11,7 +11,9 @@ class Search extends Component {
     this.handleSearchTermChange = this.handleSearchTermChange.bind(this);
   }
 
-  handleSearchTermChange(event) {
+  handleSearchTermChange(
+    event: SyntheticKeyboardEvent & { target: HTMLInputElement }
+  ) {
     this.setState({ searchTerm: event.target.value });
   }
 
