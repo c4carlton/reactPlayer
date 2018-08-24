@@ -1,3 +1,4 @@
+// @flow
 import React from "react";
 import { string } from "prop-types";
 import styled from "styled-components";
@@ -31,11 +32,11 @@ const ShowCard = props => (
   </Wrapper>
 );
 
-ShowCard.propTypes = {
-  poster: string.isRequired,
-  title: string.isRequired,
-  year: string.isRequired,
-  description: string.isRequired
-};
+// ShowCard.propTypes = {
+//   poster: string.isRequired,
+//   title: string.isRequired,
+//   year: string.isRequired,
+//   description: string.isRequired
+// };
 
 export default ShowCard;
